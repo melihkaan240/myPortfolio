@@ -57,12 +57,12 @@ const Index = () => {
           </Text>
 
           <Box gap={"32px"} mt={{base:"30px"}} display={"flex"}  w={"100%"}>
-          <Button display={"inline-flex"} py={"12px"} px={"25px"} bgColor={"#7562E0"}
+          <Button display={"inline-flex"} py={"12px"} px={{base:"15px",md:"25px"}} bgColor={"#7562E0"}
            _hover={{ transform: "scale(1.15)" }}  color={"white"} gap={"6px"} fontSize={"16px"} 
            fontWeight={600} lineHeight={"normal"} fontStyle={"normal"}>About me <BiSolidUser size={20}/> </Button>
 
           <Button display={"inline-flex"} border={"2px"} borderColor={"#7562E0"} 
-           _hover={{ transform: "scale(1.15)" }}  py={"12px"} px={"34px"} bgColor={"#1A1A29"} color={"white"}
+           _hover={{ transform: "scale(1.15)" }}  py={"12px"} px={{base:"24px",md:"34px"}} bgColor={"#1A1A29"} color={"white"}
             gap={"6px"} fontSize={"16px"} fontWeight={600} lineHeight={"normal"} 
             fontStyle={"normal"}>Projects <BsEyeFill size={20}/> </Button>
           
