@@ -13,10 +13,10 @@ const Index = () => {
       alignItems={"center"}
       justifyContent={"center"}
       overflowX={"hidden"}
-      py={{base:10,md:40}}
+      py={{base:"30px",md:"113px"}}
     >
       <Grid
-      gap={{base:"160px",md:"160px"}}
+      gap={{base:"90px",md:"160px"}}
         templateColumns="repeat(2, 1fr)"
         display={"flex"}
         flexDirection={{ base: "column", md: "row" }}

@@ -33,7 +33,7 @@ export default function WithSubnavigation() {
         bg={"#181824"}
         minH={"60px"}
         alignItems={"center"}
-        py={{base:6}}
+        py={{base:4}}
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
