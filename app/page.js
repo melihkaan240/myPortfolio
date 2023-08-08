@@ -1,5 +1,5 @@
 "use client"
-import { Box } from '@chakra-ui/react'
+import { Box, Center } from '@chakra-ui/react'
 import HomeComp from "./components/home/index"
 import Aboutme from "./components/aboutme/index"
 import Project from "./components/project/index"
@@ -9,20 +9,19 @@ import Footer from "./components/footer/index"
 
 export default function Home() {
   return (
-    <Box bg="#1A1A29" w="100%" h="100vh" overflowY="auto">
+    <Box display={"flex"} alignItems={"center"} justifyContent={"center"} bg="#1A1A29" w="100%" h="auto" overflowY="auto">
       <Box
       position="fixed" top={0} left={0} right={0} zIndex={100}
       >
       <Navbar  />
       </Box>
-      <Box bg="#1A1A29" w="100%" h="auto" overflowY="auto" pt="70px">
-        {/* pt (padding-top) ile Navbar yüksekliği kadar boşluk bırakıyoruz */}
+      <Center  w="100%"  h="auto" display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}  overflowY="auto" pt="70px">
         <HomeComp />
         <Aboutme />
         <Project />
         <Contact />
         <Footer/>
-      </Box>
+      </Center>
     </Box>
 
   )

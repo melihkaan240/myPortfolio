@@ -15,32 +15,42 @@ const index = () => {
       width={"100%"}
       height={"auto"}
       display={"flex"}
-      px={"14%"}
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
     >
-      <Text
-        color={"#7562E0"}
+      <Box px={{sm:"14%",md:"18%"}}>
+          <Text
+        display={"flex"}
+        w={"100%"}
+        justifyContent={"center"}
         fontSize={"32px"}
         fontStyle={"normal"}
         fontWeight={600}
         lineHeight={"normal"}
+        color={"#7562E0"}
+        mt={{ base: "45px", md: "80px" }}
       >
-        About me
+        About Me
       </Text>
-      <Text color={"white"}>
-        Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI
-        designer, and Mobile developer. I jhave honed my skills in Web
-        Development and advance i have core understanding of advance UI design
-        principles. Here are the major skiills i have.{" "}
+      <Text
+        display={"flex"}
+        w={"100%"}
+        justifyContent={"center"}
+        fontSize={"18px"}
+        fontStyle={"normal"}
+        fontWeight={500}
+        lineHeight={"32px"}
+        color={"white"}
+      >
+      Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile developer. I jhave honed my skills in Web Development and advance i have core understanding of advance UI design principles. 
+Here are the major skiills i have. 
       </Text>
-
+      </Box>
       <SimpleGrid
         columns={{ base: 2, md: 4 }}
-        w={"100%"}
-        mt={{ base: "25px", md: "65px" }}
-        spacing={10}
+        mt={{ base: "25px", md: "45px" }}
+        spacing={7}
       >
         <Box
           display={"flex"}
@@ -162,7 +172,6 @@ const index = () => {
 
       <Text
         display={"flex"}
-        w={"100%"}
         justifyContent={"center"}
         fontSize={"32px"}
         fontStyle={"normal"}
@@ -175,7 +184,6 @@ const index = () => {
       </Text>
       <SimpleGrid
         columns={{ base: 2, md: 3 }}
-        w={"100%"}
         mt={{ base: "25px", md: "32px" }}
         spacing={10}
       >

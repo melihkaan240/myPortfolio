@@ -5,14 +5,12 @@ import Image from 'next/image';
 const index = () => {
   return (
     <Box
-    width={"100%"}
-    height={"auto"}
     display={"flex"}
-    px={"14%"}
     flexDirection={"column"}
-    alignItems={"center"}
     justifyContent={"center"}
+    alignItems={"center"}
     >
+      <Box px={"14%"} >
           <Text
         display={"flex"}
         w={"100%"}
@@ -38,10 +36,9 @@ const index = () => {
       >
        I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects
       </Text>
-
+      </Box>
       <SimpleGrid
         columns={{ base: 1, md: 3 }}
-        w={"100%"}
         mt={{ base: "25px", md: "65px" }}
         spacing={10}
       >
