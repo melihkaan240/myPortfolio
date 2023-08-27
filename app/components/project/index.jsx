@@ -9,6 +9,7 @@ const index = () => {
     flexDirection={"column"}
     justifyContent={"center"}
     alignItems={"center"}
+    id='projects'
     >
       <Box px={"14%"} >
           <Text
@@ -63,8 +64,8 @@ const index = () => {
           height={173}
           />
           <Box>
-          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={600} fontSize={"24px"} lineHeight={"36px"} color={"#7562E0"}>TWINDER</Text>
-          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={500} fontSize={"18px"} lineHeight={"27px"} color={"white"}>A live Geolocation app for finding tweets and twitter users around you.</Text>
+          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={600} fontSize={"24px"} lineHeight={"36px"} color={"#7562E0"}>NFT Market Place</Text>
+          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={500} fontSize={"18px"} lineHeight={"27px"} color={"white"}>An NFT marketplace for selling, buying and displaying NFTs</Text>
           </Box>
           <Box display={"flex"} flexDirection={"row"} gap={"18px"} >
           <Button px={{base:"28px",md:"35px"}} py={"10px"} fontWeight={600} fontSize={"16px"}  _hover={{ transform: "scale(1.1)"}}
@@ -92,8 +93,8 @@ const index = () => {
           height={173}
           />
           <Box>
-          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={600} fontSize={"24px"} lineHeight={"36px"} color={"#7562E0"}>TWINDER</Text>
-          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={500} fontSize={"18px"} lineHeight={"27px"} color={"white"}>A live Geolocation app for finding tweets and twitter users around you.</Text>
+          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={600} fontSize={"24px"} lineHeight={"36px"} color={"#7562E0"}>POSS Application</Text>
+          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={500} fontSize={"18px"} lineHeight={"27px"} color={"white"}>A live product sales app for product sales.</Text>
           </Box>
           <Box display={"flex"} flexDirection={"row"} gap={"18px"} >
           <Button px={{base:"28px",md:"35px"}} py={"10px"} fontWeight={600} fontSize={"16px"}  _hover={{ transform: "scale(1.1)"}}
@@ -121,8 +122,8 @@ const index = () => {
           height={173}
           />
           <Box>
-          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={600} fontSize={"24px"} lineHeight={"36px"} color={"#7562E0"}>TWINDER</Text>
-          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={500} fontSize={"18px"} lineHeight={"27px"} color={"white"}>A live Geolocation app for finding tweets and twitter users around you.</Text>
+          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={600} fontSize={"24px"} lineHeight={"36px"} color={"#7562E0"}>Yazılım Kursu Clone</Text>
+          <Text display={"flex"} alignItems={"start"} w={"100%"} fontWeight={500} fontSize={"18px"} lineHeight={"27px"} color={"white"}>blabla</Text>
           </Box>
           <Box display={"flex"} flexDirection={"row"} gap={"18px"} >
           <Button px={{base:"28px",md:"35px"}} py={"10px"} fontWeight={600} fontSize={"16px"}  _hover={{ transform: "scale(1.1)"}}

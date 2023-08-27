@@ -5,6 +5,12 @@ import { BiSolidUser } from 'react-icons/bi';
 import { BsEyeFill } from 'react-icons/bs';
 import Image from "next/image";
 const Index = () => {
+  const scrollToSection = sectionId => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      window.scrollTo({ top: section.offsetTop, behavior: 'smooth' })
+    }
+  }
   return (
     <Box
       width={"100%"}
@@ -14,6 +20,7 @@ const Index = () => {
       justifyContent={"center"}
       overflowX={"hidden"}
       py={{base:"30px",md:"113px"}}
+      id="home"
     >
       <Grid
       gap={{base:"90px",md:"160px"}}
@@ -52,19 +59,24 @@ const Index = () => {
             lineHeight={"normal"}
             color={"white"}
           >
-            Freelance UI designer, Fullstack developer, & Data Miner. I create
-            seamless web experiences for end-users.
+           
+I am a full stack developer.I create seamless web experiences for end-users.
+
           </Text>
 
           <Box gap={"32px"} mt={{base:"30px"}} display={"flex"}  w={"100%"}>
           <Button display={"inline-flex"} py={"12px"} px={{base:"15px",md:"25px"}} bgColor={"#7562E0"}
            _hover={{ transform: "scale(1.15)" }}  color={"white"} gap={"6px"} fontSize={"16px"} 
-           fontWeight={600} lineHeight={"normal"} fontStyle={"normal"}>About me <BiSolidUser size={20}/> </Button>
+           fontWeight={600} lineHeight={"normal"} fontStyle={"normal"}
+           onClick={() => scrollToSection(`aboutme`)}
+           >About me <BiSolidUser size={20}/> </Button>
 
           <Button display={"inline-flex"} border={"2px"} borderColor={"#7562E0"} 
            _hover={{ transform: "scale(1.15)" }}  py={"12px"} px={{base:"24px",md:"34px"}} bgColor={"#1A1A29"} color={"white"}
             gap={"6px"} fontSize={"16px"} fontWeight={600} lineHeight={"normal"} 
-            fontStyle={"normal"}>Projects <BsEyeFill size={20}/> </Button>
+            fontStyle={"normal"}
+            onClick={() => scrollToSection(`projects`)}
+            >Projects <BsEyeFill size={20}/> </Button>
           
 
           </Box> 

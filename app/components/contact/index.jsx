@@ -2,7 +2,7 @@ import React from 'react'
 import { Box ,Button,Input,Stack,Text} from '@chakra-ui/react'
 const index = () => {
   return (
-    <Box display={"flex"} flexDirection={"column"} gap={"36px"}>
+    <Box display={"flex"} flexDirection={"column"} gap={"36px"} id='contact' >
        <Text
         display={"flex"}
         w={"100%"}

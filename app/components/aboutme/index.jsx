@@ -18,8 +18,9 @@ const index = () => {
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
+      id="aboutme"
     >
-      <Box px={{sm:"14%",md:"18%"}}>
+      <Box px={{base:"14%",md:"18%"}}>
           <Text
         display={"flex"}
         w={"100%"}
@@ -43,8 +44,7 @@ const index = () => {
         lineHeight={"32px"}
         color={"white"}
       >
-      Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile developer. I jhave honed my skills in Web Development and advance i have core understanding of advance UI design principles. 
-Here are the major skiills i have. 
+      Hello, my name is Melih Kaan. I am proficient in front-end, back-end, and SQL skills as a Full Stack Web Developer. Additionally, I possess a strong understanding of advanced UI design principles. I have elevated my foundational knowledge in web development to an advanced level. Here are the core skills I have
       </Text>
       </Box>
       <SimpleGrid
