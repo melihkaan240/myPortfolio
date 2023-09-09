@@ -31,6 +31,10 @@ const Index = () => {
         <GridItem
           h="auto"
           w="full"
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
           maxW={{ md: "28vw" }}
           px={{base:"14%",md:0}}
         >
@@ -38,6 +42,7 @@ const Index = () => {
             fontSize={"32px"}
             fontStyle={"normal"}
             fontWeight={600}
+            alignSelf={"self-start"}
             lineHeight={"normal"}
             color={"white"}
           >
@@ -49,6 +54,8 @@ const Index = () => {
             fontWeight={600}
             lineHeight={"normal"}
             color={"white"}
+            alignSelf={"self-start"}
+
           >
           Melih Kaan Arac
           </Text>
@@ -84,21 +91,20 @@ I am a full stack developer.I create seamless web experiences for end-users.
         <GridItem
           position={"relative"}
           display={"flex"}
-          alignItems={"center"}
+          alignItems={"end"}
           justifyContent={"center"}
-          
           h="auto"
           w={"100%"}
         >
-          <Box display={"flex"}  position={"relative"} h={{base:"300px",md:"366px"}} w={{base:"300px",sm:"200px",md:"486px"}} mb={20}>
+          <Box display={"flex"}   position={"relative"} h={{base:"280px",md:"366px"}}  w={{base:"300px",sm:"200px",md:"486px"}} mb={20}>
           <Image
             src={"/ellipse.png"}
             alt="Picture of the author"
             fill
           />
           </Box>
-          <Box position={"absolute"}  h={{base:"350px",md:"444px"}} w={{base:"300px", sm:"200px", md:"444px"}} mb={20}>
-            <Image src={"/profile.png"} fill />
+          <Box position={"absolute"}    h={{base:"350px",md:"475px"}} w={{base:"300px", sm:"200px", md:"475px"}} mb={20}>
+            <Image src={"/profile.png"} fill alt="profile" />
           </Box>
         </GridItem>
       </Grid>

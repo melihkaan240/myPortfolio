@@ -6,8 +6,9 @@ const index = () => {
        <Text
         display={"flex"}
         w={"100%"}
-        px={"14%"}
+        px={{base:0,md:"14%"}}
         justifyContent={"center"}
+        alignItems={"center"}
         fontSize={"32px"}
         fontStyle={"normal"}
         fontWeight={600} 
