@@ -67,7 +67,7 @@ const Index = () => {
             color={"white"}
           >
            
-               I am a full stack developer.I create seamless web experiences for end-users.
+               I am a full stack developer. I create seamless web experiences for end-users.
 
           </Text>
 
