@@ -19,7 +19,7 @@ const Index = () => {
       alignItems={"center"}
       justifyContent={"center"}
       overflowX={"hidden"}
-      py={{base:"30px",md:"113px"}}
+      pt={{base:"30px",md:"113px"}}
       id="home"
     >
       <Grid
@@ -67,7 +67,7 @@ const Index = () => {
             color={"white"}
           >
            
-I am a full stack developer.I create seamless web experiences for end-users.
+               I am a full stack developer.I create seamless web experiences for end-users.
 
           </Text>
 

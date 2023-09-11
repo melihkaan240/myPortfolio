@@ -22,7 +22,7 @@ const index = () => {
       <Input  placeholder='Name:'  border={"none"} width={"70vw"} height={{base:"6vh",md:"8vh"}} opacity={"89%"} color={"#F5F5F5"} bgColor={"#31313F"}/>
       <Input cursor={"pointer"} placeholder='Email:' border={"none"}  width={"70vw"} height={{base:"6vh",md:"8vh"}} opacity={"89%"} color={"#F5F5F5"} bgColor={"#31313F"}/>
       <Input cursor={"pointer"} placeholder='Message:' border={"none"}  width={"70vw"} height={{base:"10vh",md:"12vh"}} opacity={"89%"} color={"#F5F5F5"} bgColor={"#31313F"}/>
-  <Button px={"66px"} py={"15px"} _hover={{ transform: "scale(1.1)" }}  fontWeight={500} fontSize={"16px"} lineHeight={"24px"} color={"white"} bgColor={"#7562E0"}>Send</Button>
+      <Button px={"66px"} py={"15px"} _hover={{ transform: "scale(1.1)" }}  fontWeight={500} fontSize={"16px"} lineHeight={"24px"} color={"white"} bgColor={"#7562E0"}>Send</Button>
      </Stack>
     </Box>
   )
