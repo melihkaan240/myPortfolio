@@ -44,7 +44,7 @@ const index = () => {
         lineHeight={"32px"}
         color={"white"}
       >
-      Hello, my name is Melih Kaan. I am proficient in front-end, back-end, and SQL skills as a Full Stack Web Developer. Additionally. I have elevated my foundational knowledge in web development to an advanced level. Here are the core skills I have;
+      Hello, my name is Melih Kaan. As a Full Stack Web Developer, I am proficient in front-end, back-end, and SQL skills. Additionally, I have elevated my foundational knowledge in web development to an advanced level. Here are the core skills that I have;
       </Text>
       </Box>
 

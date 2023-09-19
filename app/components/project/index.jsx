@@ -60,6 +60,7 @@ const index = () => {
         >
           <Image
           src={"/Project.png"}
+          alt="Project"
           width={311}
           height={173}
           />
@@ -89,6 +90,7 @@ const index = () => {
         >
           <Image
           src={"/Project.png"}
+          alt='Project3'
           width={311}
           height={173}
           />
@@ -118,6 +120,7 @@ const index = () => {
         >
           <Image
           src={"/Project.png"}
+          alt='Project2'
           width={311}
           height={173}
           />
