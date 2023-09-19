@@ -9,6 +9,7 @@ import Footer from "./components/footer/index"
 
 export default function Home() {
   return (
+
     <Box display={"flex"} alignItems={"center"} justifyContent={"center"} bg="#1A1A29" w="100%" h="auto" overflowY="auto">
       <Box
       position="fixed" top={0} left={0} right={0} zIndex={100}
