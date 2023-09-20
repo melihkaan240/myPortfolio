@@ -62,7 +62,7 @@ const index = () => {
           bgColor={"#7562E0"}
           height={{ base: "20vh", md: "28vh" }}
           width={{ base: "35vw", md: "15vw" }}
-          p={"24px"}
+          p={"16px"}
         >
           <Code size={40} color="white" />
           <Text
@@ -92,7 +92,7 @@ const index = () => {
           _hover={{ bg: "#7562E0" }}
           height={{ base: "20vh", md: "28vh" }}
           width={{ base: "35vw", md: "15vw" }}
-          p={"24px"}
+          p={"16px"}
         >
           <Barcode size={40} color="white" />
           <Text
@@ -121,7 +121,7 @@ const index = () => {
           _hover={{ bg: "#7562E0" }}
           height={{ base: "20vh", md: "28vh" }}
           width={{ base: "35vw", md: "15vw" }}
-          p={"24px"}
+          p={"16px"}
         >
           <Data size={40} color="white" />
           <Text
@@ -133,7 +133,7 @@ const index = () => {
             SQL & NOSQL
           </Text>
           <Text
-            size={"24px"}
+            size={"16px"}
             fontWeight={600}
             lineHeight={"36px"}
             color={"white"}
