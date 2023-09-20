@@ -13,8 +13,8 @@ const index = () => {
   const projectArr = [
     {
       img: "/TodoApp.png",
-      title: "Nft Market Place",
-      description: "An NFT marketplace for selling, buying and displaying NFTs",
+      title: "Todo List App",
+      description: "A website where you can create your to-do list",
       github: "https://github.com/melihkaan240/TODOAPP-WITH-REACT",
       live: "https://todoapp-with-react.vercel.app/",
     },
@@ -133,7 +133,7 @@ const index = () => {
               display={"flex"}
               w={"full"}
               justifyContent={"center"}
-              flexDirection={{ base: "column", md: "column",lg:"column",xl:"row" }}
+              flexDirection={{ base: "column", md: "column", lg: "column", xl: "row" }}
               gap={"18px"}
             >
               <Box w={"full"} >
