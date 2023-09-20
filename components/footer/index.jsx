@@ -6,8 +6,9 @@ import {
 
 } from "@chakra-ui/react";
 import {FaSquareTwitter,FaSquareInstagram} from "react-icons/fa6"
-import {FaGithubSquare} from "react-icons/fa"
+import {FaGithubSquare,FaLinkedin} from "react-icons/fa"
 import {HiMail} from "react-icons/hi"
+
 const index = () => {
   return (
     <Box
@@ -23,6 +24,9 @@ const index = () => {
     >
      <Text fontWeight={500} fontSize={"16px"} lineHeight={"24px"} color={"gray"}>@2023 Melih Kaan Arac</Text>
 <Box display={"flex"} flexDirection={"row"} gap={"15px"}>
+<a href="https://www.linkedin.com/in/melihkaanarac/" target="_blank">
+<FaLinkedin  cursor="pointer"  size="30" color="#7562E0"/>
+</a>
     <a href="https://twitter.com/meliiihkaan" target="_blank">
 <FaSquareTwitter cursor="pointer"  size="30" color="#7562E0" />
 </a>
