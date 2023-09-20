@@ -70,8 +70,14 @@ export default function Simple () {
         >
           <IconButton
             size={'md'}
-            bgColor={'#7562E0'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            bgColor={'white'}
+            icon={
+              isOpen ? (
+                <CloseIcon color={'#7562E0'} />
+              ) : (
+                <HamburgerIcon color={'#7562E0'} />
+              )
+            }
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}

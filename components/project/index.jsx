@@ -4,33 +4,35 @@ import { Barcode, Chainlink, Code, Data } from "iconsax-react";
 import Image from "next/image";
 const index = () => {
   const imageStyle = {
-    borderRadius: '2%',
-  }
+    borderRadius: "2%",
+    objectFit: "cover",
+  };
+  const imageStyle2 = {
+    borderRadius: "2%",
+  };
   const projectArr = [
     {
       img: "/TodoApp.png",
       title: "Nft Market Place",
       description: "An NFT marketplace for selling, buying and displaying NFTs",
-      github:"https://github.com/melihkaan240/TODOAPP-WITH-REACT",
-      live:"https://todoapp-with-react.vercel.app/"
-
+      github: "https://github.com/melihkaan240/TODOAPP-WITH-REACT",
+      live: "https://todoapp-with-react.vercel.app/",
     },
     {
       img: "/PossApp.png",
       title: "POSS Application",
       description: "A live product sales app for product sales.",
-      github:"https://github.com/melihkaan240/FullStack-Poss-App",
-      live:"https://poss-app-client326.onrender.com"
-
+      github: "https://github.com/melihkaan240/FullStack-Poss-App",
+      live: "https://poss-app-client326.onrender.com",
     },
-   
+
     {
       img: "/NFTmarketPlace.png",
       title: "Nft Market Place",
-      description: "An NFT marketplace for selling,  buying and displaying NFTs",
-      github:"https://github.com/Curr-MarketPlace",
-      live:"https://curr-marketplace-live.vercel.app/"
-
+      description:
+        "An NFT marketplace for selling,  buying and displaying NFTs",
+      github: "https://github.com/Curr-MarketPlace",
+      live: "https://curr-marketplace-live.vercel.app/",
     },
   ];
   return (
@@ -74,34 +76,34 @@ const index = () => {
         mt={{ base: "25px", md: "65px" }}
         spacing={10}
       >
-        {projectArr.map((items,index) => (
+        {projectArr.map((items, index) => (
           <Box
-          key={index}
+            p={{ base: "24px", md: "16px" }}
+            key={index}
             display={"flex"}
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            gap={"16px"}
+            gap={"25px"}
             borderRadius={"8px"}
             bgColor={"#31313F"}
             height={{ base: "45vh", md: "56vh" }}
             width={{ base: "75vw", md: "22vw" }}
-            p={"24px"}
           >
-            <Box  
-            display={"flex"}
-            bgColor={"red"}
-            width={311}
-           height={173}
-            position={"relative"}
-            borderRadius={"full"}
-              >
-            <Image
-             style={imageStyle}
-              src={items.img}
-              alt="Projects"
-              fill
-            />
+            <Box
+              display={"flex"}
+              width={"full"}
+              height={"full"}
+              position={"relative"}
+              borderRadius={"md"}
+              overflow={"hidden"}
+            >
+              <Image
+                style={{ base: imageStyle, md: imageStyle2 }}
+                src={items.img}
+                alt="Projects"
+                fill
+              />
             </Box>
             <Box>
               <Text
@@ -113,7 +115,7 @@ const index = () => {
                 lineHeight={"36px"}
                 color={"#7562E0"}
               >
-               {items.title}
+                {items.title}
               </Text>
               <Text
                 display={"flex"}
@@ -127,39 +129,47 @@ const index = () => {
                 {items.description}
               </Text>
             </Box>
-            <Box display={"flex"} flexDirection={"row"} gap={"18px"}>
-              <a href={items.live} target="_blank" rel="noopener noreferrer">
-              <Button
-                px={{ base: "28px", md: "35px" }}
-                py={"10px"}
-                fontWeight={600}
-                fontSize={"16px"}
-                _hover={{ transform: "scale(1.1)" }}
-                lineHeight={"24px"}
-                bgColor={"#7562E0"}
-                color={"white"}
-                borderRadius={"8px"}
-                gap={"6px"}
-              >
-                View Live
-              </Button>
-              </a>
-               <a href={items.github} target="_blank" rel="noopener noreferrer">
-              <Button
-                px={{ base: "16px", md: "22px" }}
-                py={"10px"}
-                fontWeight={600}
-                fontSize={"16px"}
-                _hover={{ transform: "scale(1.1)" }}
-                lineHeight={"24px"}
-                bgColor={"#31313F"}
-                border={"3px solid #7562E0"}
-                color={"white"}
-                borderRadius={"8px"}
-                gap={"6px"}
-              >
-                Github Repo
-              </Button>
+            <Box
+              display={"flex"}
+              w={"full"}
+              justifyContent={"center"}
+              flexDirection={{ base: "column", md: "column",lg:"column",xl:"row" }}
+              gap={"18px"}
+            >
+              <Box w={"full"} >
+                <a href={items.live} target="_blank">
+                  <Button
+                    w={"full"}
+                    h={{ base: "5vh", md: "6vh" }}
+                    fontWeight={600}
+                    fontSize={"16px"}
+                    _hover={{ transform: "scale(1.1)" }}
+                    lineHeight={"24px"}
+                    bgColor={"#7562E0"}
+                    color={"white"}
+                    borderRadius={"8px"}
+                    href={items.live}
+                  >
+                    View Live
+                  </Button>
+                </a>
+              </Box>
+
+              <a href={items.github} target="_blank" rel="noopener noreferrer">
+                <Button
+                  width={"full"}
+                  h={{ base: "5vh", md: "6vh" }}
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  _hover={{ transform: "scale(1.1)" }}
+                  lineHeight={"24px"}
+                  bgColor={"#31313F"}
+                  border={"3px solid #7562E0"}
+                  color={"white"}
+                  borderRadius={"8px"}
+                >
+                  Github Repo
+                </Button>
               </a>
             </Box>
           </Box>
