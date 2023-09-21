@@ -87,7 +87,7 @@ const index = () => {
             gap={"25px"}
             borderRadius={"8px"}
             bgColor={"#31313F"}
-            height={{ base: "45vh", md: "56vh" }}
+            height={"56vh"}
             width={{ base: "75vw", md: "22vw" }}
           >
             <Box
