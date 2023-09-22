@@ -23,7 +23,7 @@ const Index = () => {
       id="home"
     >
       <Grid
-        gap={{ base: "90px", md: "160px" }}
+        gap={{ base: "90px", md: "100px" }}
         templateColumns="repeat(2, 1fr)"
         display={"flex"}
         flexDirection={{ base: "column", md: "row" }}

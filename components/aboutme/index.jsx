@@ -32,7 +32,7 @@ const index = () => {
         color={"#7562E0"}
         mt={{ base: "45px", md: "80px" }}
       >
-        About Me
+        ABOUT ME
       </Text>
       <Text
         display={"flex"}
@@ -60,6 +60,8 @@ const index = () => {
           alignItems={"start"}
           justifyContent={"end"}
           bgColor={"#7562E0"}
+          _hover={{ bg: "#BDBDBD" }}
+
           height={{ base: "20vh", md: "28vh" }}
           width={{ base: "35vw", md: "15vw" }}
           p={"16px"}
@@ -182,7 +184,7 @@ const index = () => {
         color={"#7562E0"}
         mt={{ base: "45px", md: "80px" }}
       >
-        The services i offer
+        THE SERVICES I OFFER
       </Text>
       {/* Servicess skills */}
       <SimpleGrid

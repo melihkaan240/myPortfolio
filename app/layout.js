@@ -1,7 +1,7 @@
 "use client";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-
+import toast, { Toaster } from 'react-hot-toast';
 import { Providers } from "./providers";
 const poppins = Poppins({
   weight: '400',
@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
         <Providers>
 
           {children}
+          <Toaster />
           </Providers>
       </body>
     </html>

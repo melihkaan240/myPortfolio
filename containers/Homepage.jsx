@@ -35,8 +35,11 @@ export default function Homepage() {
         <Aboutme />
         <Project />
         <Contact />
+
         <Footer />
+
       </Center>
     </Box>
+
   );
 }

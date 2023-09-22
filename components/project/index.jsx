@@ -13,7 +13,7 @@ const index = () => {
   const projectArr = [
     {
       img: "/TodoApp.png",
-      title: "Todo List App",
+      title: "To-do List App",
       description: "A website where you can create your to-do list",
       github: "https://github.com/melihkaan240/TODOAPP-WITH-REACT",
       live: "https://todoapp-with-react.vercel.app/",
@@ -43,7 +43,8 @@ const index = () => {
       alignItems={"center"}
       id="projects"
     >
-      <Box px={"14%"}>
+      <Box         px={{base:"14%",md:"5%"}}
+ w={"full"} >
         <Text
           display={"flex"}
           w={"100%"}
@@ -55,17 +56,19 @@ const index = () => {
           color={"#7562E0"}
           mt={{ base: "45px", md: "80px" }}
         >
-          The services i offer
+          FEATURED PROJECT
         </Text>
         <Text
           display={"flex"}
-          w={"100%"}
+          minW={"100%"}
+          h={"auto"}
           justifyContent={"center"}
           fontSize={"18px"}
           fontStyle={"normal"}
           fontWeight={500}
           lineHeight={"32px"}
           color={"white"}
+          px={{base:"14%",md:0}}
         >
           I have worked on many projects over the course of being a Web
           Developer, here are a few of my live, real-world projects
@@ -75,6 +78,7 @@ const index = () => {
         columns={{ base: 1, md: 3 }}
         mt={{ base: "25px", md: "65px" }}
         spacing={10}
+        px={{base:"14%",md:"5%"}}
       >
         {projectArr.map((items, index) => (
           <Box
@@ -88,7 +92,7 @@ const index = () => {
             borderRadius={"8px"}
             bgColor={"#31313F"}
             height={"56vh"}
-            width={{ base: "75vw", md: "22vw" }}
+            width={{ base: "75vw", md: "20vw" }}
           >
             <Box
               display={"flex"}
