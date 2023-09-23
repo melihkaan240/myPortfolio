@@ -68,7 +68,6 @@ const index = () => {
           fontWeight={500}
           lineHeight={"32px"}
           color={"white"}
-          px={{base:"14%",md:0}}
         >
           I have worked on many projects over the course of being a Web
           Developer, here are a few of my live, real-world projects
