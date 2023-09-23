@@ -13,7 +13,7 @@ const index = () => {
   const projectArr = [
     {
       img: "/TodoApp.png",
-      title: "To-do List App",
+      title: "To-Do List App",
       description: "A website where you can create your to-do list",
       github: "https://github.com/melihkaan240/TODOAPP-WITH-REACT",
       live: "https://todoapp-with-react.vercel.app/",
@@ -56,7 +56,7 @@ const index = () => {
           color={"#7562E0"}
           mt={{ base: "45px", md: "80px" }}
         >
-          FEATURED PROJECT
+          Featured Project
         </Text>
         <Text
           display={"flex"}

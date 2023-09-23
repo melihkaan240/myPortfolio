@@ -32,7 +32,7 @@ const index = () => {
         color={"#7562E0"}
         mt={{ base: "45px", md: "80px" }}
       >
-        ABOUT ME
+        About Me
       </Text>
       <Text
         display={"flex"}
@@ -184,7 +184,7 @@ const index = () => {
         color={"#7562E0"}
         mt={{ base: "45px", md: "80px" }}
       >
-        THE SERVICES I OFFER
+        The Services I Offer
       </Text>
       {/* Servicess skills */}
       <SimpleGrid

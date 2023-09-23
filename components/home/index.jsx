@@ -46,7 +46,7 @@ const Index = () => {
             lineHeight={"normal"}
             color={"white"}
           >
-            Hello, i am
+            Hello, I am
           </Text>
           <Text
             fontSize={"52px"}
