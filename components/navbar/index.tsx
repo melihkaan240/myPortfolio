@@ -64,20 +64,14 @@ export default function Simple () {
         <Flex
           h={16}
           alignItems={'center'}
-          px={10}
-          gap={40}
+          px={5}
+          gap={36}
           justifyContent={'space-between'}
         >
           <IconButton
             size={'md'}
-            bgColor={'white'}
-            icon={
-              isOpen ? (
-                <CloseIcon color={'#7562E0'} />
-              ) : (
-                <HamburgerIcon color={'#7562E0'} />
-              )
-            }
+            bgColor={'#7562E0'}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
