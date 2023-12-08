@@ -22,7 +22,7 @@ const index = () => {
       alignItems={"center"}
       justifyContent={"center"}
     >
-     <Text fontWeight={500} fontSize={"16px"} lineHeight={"24px"} color={"gray"}>@2023 Melih Kaan Arac</Text>
+     <Text fontWeight={500} fontSize={"16px"} lineHeight={"24px"} color={"gray"}>ⓒ2023 Melih Kaan Arac</Text>
 <Box display={"flex"} flexDirection={"row"} gap={"15px"}>
 <a href="https://www.linkedin.com/in/melihkaanarac/" target="_blank">
 <FaLinkedin  cursor="pointer"  size="30" color="#7562E0"/>
