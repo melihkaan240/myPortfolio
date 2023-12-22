@@ -38,6 +38,7 @@ const NavLink = (props: any) => {
       rounded={'md'}
       color={'white'}
       cursor={'pointer'}
+     
       _hover={{
         textDecoration: 'none',
         color: '#7562E0',
@@ -60,7 +61,7 @@ export default function Simple () {
   }
   return (
     <>
-      <Box bg='#181824' px={{ base: '0px', md: '160px' }} w={'full'}>
+      <Box bg='#181824'  px={{ base: '0px', md: '160px' }} w={'full'}>
         <Flex
           h={16}
           alignItems={'center'}
