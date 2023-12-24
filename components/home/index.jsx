@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
-import { Box, Text, Grid, GridItem, Button } from "@chakra-ui/react";
+import React,{useState} from "react";
+import { Box, Text, Grid, GridItem, Button,chakra,shouldForwardProp } from "@chakra-ui/react";
 import { BiSolidUser } from "react-icons/bi";
 import { BsEyeFill } from "react-icons/bs";
+import { motion, isValidMotionProp } from 'framer-motion';
 import Image from "next/image";
 const Index = () => {
   const scrollToSection = (sectionId) => {
@@ -10,6 +11,21 @@ const Index = () => {
     if (section) {
       window.scrollTo({ top: section.offsetTop, behavior: "smooth" });
     }
+  };
+
+  const ChakraBox = chakra(motion.div, {
+    /**
+     * Allow motion props and non-Chakra props to be forwarded.
+     */
+    shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
+  });
+
+
+  const [animationKey, setAnimationKey] = useState(0);
+
+  const handleAnimationComplete = () => {
+    // Animasyon tamamlandığında state'i güncelleyerek animasyonu tekrar başlat
+    setAnimationKey((prevKey) => prevKey + 1);
   };
   return (
     <Box
@@ -37,7 +53,18 @@ const Index = () => {
           alignItems={"center"}
           maxW={{ md: "28vw" }}
           px={{ base: "14%", md: 0 }}
+          
         >
+          <ChakraBox
+           key={animationKey}
+           initial={{ x: "-40%" }}
+           animate={{ x: 0 }}
+           exit={{ x: "100%" }}
+           transition={{
+             duration: 1,
+             ease: "easeInOut",
+           }}
+          >
           <Text
             fontSize={"32px"}
             fontStyle={"normal"}
@@ -106,6 +133,7 @@ const Index = () => {
               Projects <BsEyeFill size={20} />{" "}
             </Button>
           </Box>
+          </ChakraBox>
         </GridItem>
         <GridItem
           position={"relative"}
@@ -114,24 +142,38 @@ const Index = () => {
           justifyContent={"center"}
           h="auto"
           w={"100%"}
+          
         >
+            <ChakraBox
+           key={animationKey}
+           initial={{ x: "40%" }}
+           animate={{ x: 0 }}
+           exit={{ x: "100%" }}
+           transition={{
+             duration: 1,
+             ease: "easeInOut",
+           }}
+          >
           <Box
             display={"flex"}
             position={"relative"}
-            h={{ base: "280px", md: "366px" }}
-            w={{ base: "300px", sm: "200px", md: "486px" }}
+            h={{ base: "350px", md: "425px" }}
+            w={{ base: "300px", sm: "200px", md: "425px" }}
             mb={20}
+            
           >
-            <Image src={"/ellipse.png"} alt="Picture of the author" fill />
+            <Image src={"/melihP.png"} alt="Picture of the author" fill />
           </Box>
-          <Box
+          </ChakraBox>
+          {/* <Box
+          display={"flex"}
             position={"absolute"}
             h={{ base: "350px", md: "475px" }}
             w={{ base: "300px", sm: "200px", md: "475px" }}
             mb={20}
           >
             <Image src={"/profile.png"} fill alt="profile" />
-          </Box>
+          </Box> */}
         </GridItem>
       </Grid>
     </Box>
